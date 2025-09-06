@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil V | AI Engineer & Solutions Developer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Space Grotesk & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Animate On Scroll (AOS) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles & Theme -->
+    <style>
+        /* Tech-focused, AI-centric Color Palette */
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color-primary: #f5f5f5;
+            --text-color-secondary: #a3a3a3;
+            --accent-color: #00f5c3; /* Vibrant Tech Green */
+            --accent-color-hover: #00d9ad;
+            --card-bg-color: #1a1a1a;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --header-bg: rgba(10, 10, 10, 0.8);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(var(--text-color-secondary) 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+            color: var(--text-color-secondary);
+        }
+        
+        h1, h2, h3, .text-primary { 
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-color-primary); 
+        }
+
+        .glass-nav {
+            background-color: var(--header-bg);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: #0a0a0a;
+            font-family: 'Space Grotesk', sans-serif;
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: var(--accent-color-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 245, 195, 0.3);
+        }
+        .btn-secondary {
+            border: 1px solid var(--border-color);
+            color: var(--text-color-primary);
+            font-family: 'Space Grotesk', sans-serif;
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-secondary:hover {
+            background-color: var(--border-color);
+        }
+
+        /* Typing cursor effect */
+        .typing-cursor {
+            border-right: 2px solid var(--accent-color);
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: var(--accent-color); }
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body class="antialiased text-lg leading-relaxed">
+    <!-- NAV -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-primary">NV<span class="text-[var(--accent-color)]">.</span></a>
+            <div class="hidden md:flex items-center gap-6 font-medium">
+                <a href="#services" class="hover:text-[var(--accent-color)] transition-colors">Services</a>
+                <a href="#work" class="hover:text-[var(--accent-color)] transition-colors">Work</a>
+            </div>
+            <a href="#contact" class="btn-primary px-5 py-2 rounded-md font-bold">Contact Me</a>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6">
+        <!-- HERO -->
+        <section class="min-h-screen flex items-center pt-24">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h1 class="text-5xl md:text-7xl font-bold tracking-tighter">
+                        <span id="typing-text" class="text-primary"></span><span class="typing-cursor"></span>
+                    </h1>
+                    <p class="mt-6 text-xl max-w-2xl">
+                        I'm an AI Engineer and Full-Stack Developer, crafting intelligent, high-performance web solutions that drive business growth and efficiency.
+                    </p>
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="btn-primary px-8 py-3 rounded-md font-bold text-center">Start a Project</a>
+                        <a href="#work" class="btn-secondary px-8 py-3 rounded-md font-bold text-center">View My Work</a>
+                    </div>
+                    <div class="mt-12 flex items-center gap-6">
+                        <p class="font-medium text-primary">Find me on</p>
+                        <div class="h-px w-12 bg-[var(--border-color)]"></div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/VNIKHIL0" aria-label="GitHub" class="text-neutral-400 hover:text-[var(--accent-color)] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nikhil-v-/" aria-label="LinkedIn" class="text-neutral-400 hover:text-[var(--accent-color)] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                            <a href="https://instagram.com/nik_gud_soul" aria-label="Instagram" class="text-neutral-400 hover:text-[var(--accent-color)] transition-colors">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center" data-aos="fade-left" data-aos-delay="200">
+                    <div class="relative w-80 h-80">
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-[var(--accent-color)] rounded-full blur-3xl opacity-40 animate-pulse"></div>
+                        <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-purple-600 rounded-full blur-3xl opacity-30 animate-pulse animation-delay-4000"></div>
+                        <img src="./images/myphoto.jpg" alt="Nikhil V" class="relative w-full h-full object-cover rounded-full border-4 border-[var(--border-color)]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="py-24">
+            <div data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-2 text-primary">What I Do</h2>
+                <p class="max-w-2xl mb-12">I specialize in turning complex problems into elegant, AI-driven solutions.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-[var(--card-bg-color)] p-8 rounded-lg border border-[var(--border-color)]">
+                    <h3 class="text-2xl font-bold text-primary mb-2">LLM & Agent Integration</h3>
+                    <p>Develop intelligent agents and integrate LLMs to automate tasks and improve user engagement.</p>
+                </div>
+                <div class="bg-[var(--card-bg-color)] p-8 rounded-lg border border-[var(--border-color)]">
+                    <h3 class="text-2xl font-bold text-primary mb-2">Custom AI Models</h3>
+                    <p>Train and deploy machine learning models for tasks like recommendation engines, predictive analytics, and data classification to unlock business insights.</p>
+                </div>
+                <div class="bg-[var(--card-bg-color)] p-8 rounded-lg border border-[var(--border-color)]">
+                    <h3 class="text-2xl font-bold text-primary mb-2">Full-Stack AI Applications</h3>
+                    <p>Build end-to-end web applications with intelligent features, from a scalable backend API to a responsive, modern frontend.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK -->
+        <section id="work" class="py-24">
+            <div data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-12 text-primary">Projects</h2>
+            </div>
+            <div class="space-y-16">
+                 <!-- Project 1 -->
+                <div class="grid md:grid-cols-12 gap-8 items-center" data-aos="fade-up">
+                    <div class="md:col-span-7 rounded-lg overflow-hidden">
+                        <img class="project-image w-full h-full object-cover transition-transform duration-300" src="./images/chatbot.png" onerror="this.src='https://placehold.co/600x400/0a0a0a/00f5c3?text=Project+AI'" alt="AI Chatbot Project">
+                    </div>
+                    <div class="md:col-span-5">
+                        <h3 class="text-3xl font-bold text-primary mb-4">AI Support Chatbot</h3>
+                        <p class="mb-6">An intelligent AI chatbot for DonutTech.pvt.ltd, integrating frontend and backend with Google Gemini API to provide accurate, instant answers and manage meeting bookings, boosting engagement and efficiency.</p>
+                        <div class="flex flex-wrap gap-3 text-sm font-medium mb-6">
+                            <span class="bg-[var(--border-color)] text-primary px-3 py-1 rounded">Google Gemini API.</span>
+                            <span class="bg-[var(--border-color)] text-primary px-3 py-1 rounded">HTML, CSS, JavaScript</span>
+                            <span class="bg-[var(--border-color)] text-primary px-3 py-1 rounded">Fetch API / Axios</span>
+                            <span class="bg-[var(--border-color)] text-primary px-3 py-1 rounded">Node.js</span>
+                        </div>
+                        <a href="#" class="font-bold text-[var(--accent-color)] hover:underline">View Case Study &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="grid md:grid-cols-12 gap-8 items-center" data-aos="fade-up">
+                     <div class="md:col-span-5 md:order-last">
+                        <h3 class="text-3xl font-bold text-primary mb-4">E-commerce Recommendation Engine</h3>
+                        <p class="mb-6">Developed a collaborative filtering model to provide personalized product recommendations, increasing user engagement and average order value for an online retailer.</p>
+                        <div class="flex flex-wrap gap-3 text-sm font-medium mb-6">
+                            <span class="bg-[var(--border-color)] text-primary px-3 py-1 rounded">Python</span>
+                            <span class="bg-[var(--border-color)] text-primary px-3 py-1 rounded">Scikit-learn</span>
+                            <span class="bg-[var(--border-color)] text-primary px-3 py-1 rounded">Node.js</span>
+                            <span class="bg-[var(--border-color)] text-primary px-3 py-1 rounded">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="font-bold text-[var(--accent-color)] hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                    <div class="md:col-span-7 rounded-lg overflow-hidden md:order-first">
+                        <img class="project-image w-full h-full object-cover transition-transform duration-300" src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=1200&auto=format&fit=crop" onerror="this.src='https://placehold.co/600x400/0a0a0a/00f5c3?text=Project+AI'" alt="Recommendation Engine Project">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="py-24 text-center">
+            <div class="max-w-2xl mx-auto" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-primary mb-4">Let's Build the Future</h2>
+                <p class="mb-8">Have an idea? I'd love to hear about it. Let's discuss how AI can transform your business and create value for your users.</p>
+                <a href="mailto:nikhil.ai.dev@example.com" class="btn-primary inline-block px-10 py-4 rounded-md font-bold text-lg">vnikhilpatil@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-8 border-t border-[var(--border-color)]">
+        <p class="text-sm">© 2025 Nikhil V. AI Engineer & Solutions Developer.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 600, once: true, offset: 50 });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            header.classList.toggle('glass-nav', window.scrollY > 10);
+        });
+
+        // Typing animation
+        const typingTextElement = document.getElementById('typing-text');
+        const textToType = "Building Intelligent Solutions with AI.";
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textToType.length) {
+                typingTextElement.textContent += textToType.charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 80);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', type);
+    </script>
+</body>
+</html>
+
+
